@@ -23,7 +23,8 @@ function App() { // always starts with a capital letter
     {{}}first set of braces defines denoting a variable, second set of braces is the object 
     */
     <>
-      <MovieCard movie={{title: "Mel's Marvelous Film", release_date: "2003"}}/> 
+      <MovieCard movie={{title: "Mel's Marvelous Film", release_date: "2003"}}/>
+      <MovieCard movie={{title: "Eternal Sunshine of the Spotless Mind", release_date: "2004"}}/>  
     </>
   );
 }
