@@ -1,4 +1,5 @@
 import './App.css'
+import MovieCard from "./components/MovieCard"
 
 // COMPONENT: any function in javascript that returns some kind of jsx code (needs to have some kind of parent element, just one), don't
 // need to end inline 
@@ -21,7 +22,7 @@ function App() { // always starts with a capital letter
     </> // fragment, empty html tag
     */
     <>
-
+      
     </>
   );
 }
@@ -36,4 +37,4 @@ function Text({display}) { // prop - property, curly braces inside component,
   );
 }
 
-export default App
+export default App // default export (as opposed to named export)
