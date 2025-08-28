@@ -1,4 +1,4 @@
-import './App.css'
+import './App.css';
 import MovieCard from "./components/MovieCard"
 
 // COMPONENT: any function in javascript that returns some kind of jsx code (needs to have some kind of parent element, just one), don't
@@ -20,13 +20,15 @@ function App() { // always starts with a capital letter
       <Text display="Hallo Welt"/> 
       <Text display="FUCK YOU!!!"/>
     </> // fragment, empty html tag
+    {{}}first set of braces defines denoting a variable, second set of braces is the object 
     */
     <>
-      
+      <MovieCard movie={{title: "Mel's Marvelous Film", release_date: "2003"}}/> 
     </>
   );
 }
 
+/*
 // dummy component 
 function Text({display}) { // prop - property, curly braces inside component, 
 // define keyword for different props, pass through components 
@@ -36,5 +38,6 @@ function Text({display}) { // prop - property, curly braces inside component,
     </div>
   );
 }
+*/
 
-export default App // default export (as opposed to named export)
+export default App; // default export (as opposed to named export)
