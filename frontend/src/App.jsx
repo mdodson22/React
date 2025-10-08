@@ -24,11 +24,11 @@ function App() { // always starts with a capital letter
     {{}}first set of braces defines denoting a variable, second set of braces is the object 
     */
     <>
-      {movieNumber === 1 ? ( // conditional rendoring, if movieNumber is equal to 1
+      {/* {movieNumber === 1 ? ( // conditional rendoring, if movieNumber is equal to 1
         <MovieCard movie={{title: "Mel's Marvelous Film", release_date: "2003"}}/>
       ) : ( // otherwise ...
         <MovieCard movie={{title: "Eternal Sunshine of the Spotless Mind", release_date: "2004"}}/>
-      ) }
+      ) } */}
     </>
   );
 }
