@@ -1,14 +1,15 @@
 import './App.css';
-import MovieCard from "./components/MovieCard"
+import Home from "./pages/Home"
 
 // COMPONENT: any function in javascript that returns some kind of jsx code (needs to have some kind of parent element, just one), don't
 // need to end inline 
 // BASICS: defined something with a capital letter, return some JSX code, display a given number of times 
-function App() { // always starts with a capital letter 
-  const movieNumber = 2;
-  // javascript 
-  return (
-    // jsx code - combination of javascript and html
+      /* {movieNumber === 1 ? ( // conditional rendoring, if movieNumber is equal to 1
+        <MovieCard movie={{title: "Mel's Marvelous Film", release_date: "2003"}}/>
+      ) : ( // otherwise ...
+        <MovieCard movie={{title: "Eternal Sunshine of the Spotless Mind", release_date: "2004"}}/>
+      ) } */
+         // jsx code - combination of javascript and html
     // prop - property
     /*
     <> 
@@ -23,12 +24,12 @@ function App() { // always starts with a capital letter
     </> // fragment, empty html tag
     {{}}first set of braces defines denoting a variable, second set of braces is the object 
     */
+function App() { // always starts with a capital letter 
+  // const movieNumber = 2;
+  // javascript 
+  return (
     <>
-      {/* {movieNumber === 1 ? ( // conditional rendoring, if movieNumber is equal to 1
-        <MovieCard movie={{title: "Mel's Marvelous Film", release_date: "2003"}}/>
-      ) : ( // otherwise ...
-        <MovieCard movie={{title: "Eternal Sunshine of the Spotless Mind", release_date: "2004"}}/>
-      ) } */}
+      <Home />
     </>
   );
 }
