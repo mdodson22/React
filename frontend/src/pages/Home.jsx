@@ -8,7 +8,7 @@ function Home() {
         {id: 4, title: "About Time", release_date: "2013"}
     ]
 
-    const handle = () => {
+    const handleSearch = () => {
 
     }
 
@@ -17,6 +17,7 @@ function Home() {
             <form onSubmit={handleSearch} className="search-form">
                 <input type="text" placeholder="Search for movies ..." className="search-input"/>
             </form>
+            <button type="submit" className="search-button">Search</button>
             <div className="movies-grid-structure">
             {movies.map((movie) => (<MovieCard movie={movie} key={movie.id} />
             ))}
