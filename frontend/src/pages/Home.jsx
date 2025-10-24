@@ -32,7 +32,7 @@ function Home() {
             <div className="movies-grid-structure">
             {movies.map(
                 (movie) => 
-                movie.title.toLowerCase().startsWith(searchQuery) && 
+                // movie.title.toLowerCase().startsWith(searchQuery) && 
                     (<MovieCard movie={movie} key={movie.id} />
                     )
             )}
